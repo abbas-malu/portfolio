@@ -6,21 +6,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <style>
-   .name{
-    font-family: 'Supermercado One', cursive;
-   }
+    .name {
+      font-family: 'Supermercado One', cursive;
+    }
+
+    .main {
+      font-family: 'Acme', sans-serif;
+    }
+
+    .body {
+      background: url('https://cutewallpaper.org/21/white-background-hd-wallpapers/Black-White-Background-Hd-1920x1080-Simple-.jpg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+    }
+
+    .headline {
+      font-family: 'Lobster', cursive;
+    }
+
+    .tagline {
+      font-family: 'Pacifico', cursive;
+    }
+
+    .services {
+      background-color: rgba(122, 112, 124, 0.4);
+    }
   </style>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Pacifico&family=Supermercado+One&display=swap"
+    rel="stylesheet">
   <title>Home</title>
 </head>
 
-<body style="background-color: #E7EAEB;">
+<body class="main" style="background-color: #ffffff;">
   <!-- Navbar Starts -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" >
-    <a class="navbar-brand name" href="#"><div class="text-primary">Abbas</div><div class="text-warning inline">Developers</div></a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand name" href="#">
+      <div class="text-primary d-inline">Abbas</div>
+      <div class="text-warning d-inline">Developers</div>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -29,31 +58,87 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="services">Services</a>
+          <a class="nav-link" href="#services">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact">Contact Us</a>
+          <a class="nav-link" href="#contact">Contact Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about">About Us</a>
+          <a class="nav-link" href="#about">About Us</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-primary my-2 my-sm-0" type="submit" >Search</button>
+        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
       </form>
     </div>
   </nav>
   <!-- Navbar Ends -->
-  <div class="container my-5 shadow p-3 mb-5 bg-white rounded">
-    <div class="text-center row p-0">
-    <h1 class="display-2 name col-md-2 ml-5" style="color: #7F8B94;">Abbas </h1><h1 class="display-2 name col-lg-6 text-warning">Developers</h1>
+  <div class="container body p-0 my-5 shadow-lg mb-5 rounded">
+    <div class="p-5 rounded" id="#home">
+      <div class="my-5">&nbsp;</div>
+      <div class="mt-5">
+        <div class="display-2 name ml-2 d-inline" style="color: #7F8B94;">Abbas </div>
+        <div class="display-2 name d-inline text-warning">Developers</div>
+        <div class="container headline text-primary ml-5" style="font-size:30px;">Design Your Passion</div>
+        <div class="container p-5 tagline mt-5 text-center" style="font-size:25px;">"We love what we do and we do what
+          our clients love & work with great clients all over the world to
+          create thoughtful and purposeful websites."
+          <footer class="blockquote-footer">Abbas Malu</footer>
+        </div>
+
+        <div class="text-center"><button class="btn btn-outline-dark">Check Out Our Services</button></div>
+      </div>
+    </div>
+    <div class="services p-4" id="services">
+      <div class="ml-3 mt-5">
+        <div class="display-4">Our Services</div>
+        <ul class="list-group">
+          <li class="list-group-item text-dark" style="background-color: rgba(0, 110, 255, 0.2);">UI/UX Design</li>
+          <li class="list-group-item text-dark" style="background-color: rgba(0, 110, 255, 0.2);">Frontend Development
+          </li>
+          <li class="list-group-item text-dark" style="background-color: rgba(0, 110, 255, 0.2);">Backend Development
+          </li>
+          <li class="list-group-item text-dark" style="background-color: rgba(0, 110, 255, 0.2);">IOT Devices</li>
+          <li class="list-group-item text-dark" style="background-color: rgba(0, 110, 255, 0.2);">3D Modelling</li>
+          <li class="list-group-item text-dark" style="background-color: rgba(0, 110, 255, 0.2);">Video Editing</li>
+        </ul>
+      </div>
+    </div>
+    <div class="about mt-5" id="about">
+      <div class="display-4 text-center name">About Us</div>
+      <div class="row mt-3 p-5">
+        <div class="col-6 text-center">
+          <img src="/assests/about.png" alt="" class="img-thumbnail img-my img-fluid rounded-lg">
+        </div>
+        <div class="col-6 text-center text-warning rounded-lg bg-light" style="font-size: 50px;">
+          <div class="text-dark mr-3 p-5" style="font-size: 20px;">
+          <span>&nbsp;</span><br>
+          <span>&nbsp;</span><br>
+          <span>&nbsp;</span><br>
+          <span>&nbsp;</span><br>
+          <span>&nbsp;</span><br>
+          <span>&nbsp;</span><br>
+          <span>&nbsp;</span><br>
+          <span>&nbsp;</span><br>
+          <span>&nbsp;</span><br>
+          <span>&nbsp;</span><br>
+            Hi, I am <span class="d- inline text-primary">Abbas Malu</span>  from Indore, India. Tell me about your requirements and I will get you the best apps as per your needs.
+            <span>&nbsp;</span><br>
+            <span>&nbsp;</span><br>
+            <span>&nbsp;</span><br>
+            <span>&nbsp;</span><br>
+            <span>&nbsp;</span><br>
+            </div>
+        </div>
+        
+      </div>
+    </div>
   </div>
-  </div>
-  
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
