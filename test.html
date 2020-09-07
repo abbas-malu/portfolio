@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 780px;
+            height: 460px;
+            background-color: beige;
+            position: relative;
+            border-radius: 50px;
+            transition-property: box-shadow ;
+            transition-duration: 1s;
+        }
+        .main:hover{
+            box-shadow: 0px 0px 0px 10px rgba(188, 244, 252, .75)
+        };
+        .main:visited{
+            box-shadow: 0px 0px 0px 10px rgba(188, 244, 252, .75)
+        }; 
+        .img{
+            height: 460px;
+            width: 780px;
+            position: absolute;
+        }
+        .main h3{
+            position: absolute;
+            right: 370px;
+            bottom: 30px;
+        }
+        .main p{
+            margin-top: 50px;
+            position: absolute;
+            right: 320px;
+            bottom: 5px;
+            text-shadow: 2px 2px 5px yellow;
+            padding: 10px;
+            border-radius: 5px;
+            transition-property: text-shadow, box-shadow;
+            transition-duration: 500ms;
+            
+        }
+        .main p:active{
+            text-shadow: 2px 2px 1px red;
+            box-shadow: 0 0 0 10px rgba(0, 123, 255, .25)
+        }
+        .main p:visited{
+            text-shadow: 2px 2px 1px red;
+            box-shadow: 0 0 0 0px rgba(0, 123, 255, .25);
+        }
+        .anime{
+            margin: 200px;
+            margin-left: 500px;
+            height: 200px;
+            width: 200px;
+            background-color: #fff;
+            animation-name: myAnime;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes myAnime {
+            0%{background-color: #fff;}
+            /*10%{background-color: #ffff00; width: 210px; box-shadow: 0 0 0 10px rgba(0, 123, 255, .25);}
+            20%{background-color: #35350d;  width: 220px; box-shadow: 0 0 0 20px rgba(0, 123, 255, .25);}
+            30%{background-color: rgb(255, 0, 0);  width: 230px; box-shadow: 0 0 0 30px rgba(0, 123, 255, .25);}
+            40%{background-color: #fff;  width: 240px; box-shadow: 0 0 0 40px rgba(0, 123, 255, .25);}
+            50%{background-color: rgb(1, 26, 95);  width: 250px; box-shadow: 0 0 0 50px rgba(0, 123, 255, .25);}
+            60%{background-color: rgb(0, 163, 22);  width: 260px; box-shadow: 0 0 0 60px rgba(0, 123, 255, .25);}
+            70%{background-color: rgb(97, 0, 253);  width: 270px; box-shadow: 0 0 0 70px rgba(0, 123, 255, .25);}
+            80%{background-color: rgb(4, 143, 57);  width: 280px; box-shadow: 0 0 0 80px rgba(0, 123, 255, .25);}
+            90%{background-color: rgb(247, 0, 255);  width: 290px; box-shadow: 0 0 0 90px rgba(0, 123, 255, .25);}*/
+            100%{background-color: rgba(255, 255, 255, 0.788);  width: 200px; box-shadow: 0 0 0 100px rgba(0, 123, 255, .25);}
+        }
+        
+    </style>
+</head>
+<body bgcolor="black">
+     <!-- <div class="main">
+         <img src="/test.png" alt="" class="img"> 
+        <h3>Heading</h3>
+        <p>I am image description</p>
+    </div>  -->
+    <div class="anime">
+
+    </div>
+</body>
+</html>
