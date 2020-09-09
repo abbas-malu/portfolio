@@ -14,18 +14,124 @@
         .h50 {
             height: 200px;
         }
+
+        .myInp {
+            padding-top: 0.375rem;
+            padding-right: 0.75rem;
+            padding-bottom: 0.375rem;
+            padding-left: 0.75rem;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            height:calc(1.5em + .75rem + 2px);
+            width: 100%;
+            line-height: 5px;
+            outline: none;
+            border: 1px solid rgb(194, 194, 194);
+            border-radius: .25rem;
+            font-size: 1rem;
+            color: rgb(71, 71, 71);
+            transition: box-shadow .15s ease-in-out, border-color .15s ease-in-out;
+        }
+
+        .myInp:focus {
+            border: 1px solid #c7c7c7;
+            box-shadow: 0px 0px 0px 3px rgba(0, 174, 255, 0.25);
+        }
+
+        .myBtn {
+            user-select: none;
+            text-align: center;
+            vertical-align: middle;
+            display: inline-block;
+            padding-top: 0.375rem;
+            padding-right: 0.75rem;
+            padding-bottom: 0.375rem;
+            padding-left: 0.75rem;
+            font-weight: 400;
+            line-height: 1.5;
+            font-size: 1rem;
+            outline: none;
+            color: white;
+            background-color: rgb(140, 0, 255);
+            border: 1px solid rgb(140, 0, 255);
+            border-radius: .25rem;
+            transition: box-shadow .15s ease-in-out, border-color .15s ease-in-out;
+        }
+
+        .myBtn:focus {
+            outline: none;
+            border: 1px solid rgb(140, 0, 255);
+            box-shadow: 0px 0px 0px 4px rgba(140, 0, 255, .25);
+        }
+
+        .myBtn2 {
+            user-select: none;
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 0.375rem;
+            padding-right: 0.75rem;
+            padding-bottom: 0.375rem;
+            padding-left: 0.75rem;
+            outline: none;
+            color: rgb(255, 0, 234);
+            background-color: rgba(0, 255, 0, 0);
+            border: 1px solid rgb(255, 0, 234);
+            border-radius: .25rem;
+            transition: box-shadow .15s ease-in-out, border-color .15s ease-in-out, background-color .15s ease-in-out, color .15s ease-in-out;
+        }
+
+        .myBtn2:hover {
+            color: white;
+            background-color: rgb(255, 0, 234);
+        }
+
+        .myBtn2:focus {
+            outline: none;
+            border: 1px solid rgb(255, 0, 234);
+            box-shadow: 0px 0px 0px 4px rgba(255, 0, 234, .25);
+        }
+
+        .blockBtn {
+            width: 100%;
+        }
+
+        .myBtn3 {
+            user-select: none;
+            text-align: center;
+            vertical-align: middle;
+            display: inline-block;
+            padding-top: 0.375rem;
+            padding-right: 0.75rem;
+            padding-bottom: 0.375rem;
+            padding-left: 0.75rem;
+            font-weight: 400;
+            line-height: 1.5;
+            font-size: 1rem;
+            outline: none;
+            color: white;
+            background-image: linear-gradient(to right, red, blue);
+            border: 1px solid rgb(140, 0, 255);
+            border-radius: .25rem;
+            transition: box-shadow .15s ease-in-out, border-color .15s ease-in-out;
+        }
+
+        .myBtn3:focus {
+            outline: none;
+            border: 1px solid rgb(140, 0, 255);
+            box-shadow: 0px 0px 0px 4px rgba(140, 0, 255, .25);
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="container bg-dark mt-5 p-3">
+    <!-- <div class="container bg-dark mt-5 p-3">
         <div class="d-flex flex-row justify-content-between h50">
             <div class="bg-light p-2"><button class="btn btn-success">Button 1</button></div>
             <div class="bg-light p-2"><button class="btn btn-success">Button 2</button></div>
             <div class="bg-light p-2"><button class="btn btn-success">Button 3</button></div>
         </div>
-        <input type="text" class="form-control mt-2">
+
     </div>
     <div class="container bg-dark mt-5 p-5">
         <div class="d-flex align-items-center justify-content-center h50">
@@ -54,9 +160,21 @@
                 <button class="btn btn-primary">Submit</button>
             </div>
         </div>
+
+    </div> -->
+    <div class="container my-5">
+        <input type="text" class="form-control mt-2" spellcheck="false">
+        <input type="text" class="myInp" spellcheck="false">
+        <button type="submit" class="myBtn">Submit</button><br><br>
+        <button class="btn btn-success">Submit</button><br><br>
+        <button class="btn btn-outline-success">Submit</button><br><br>
+        <button class="myBtn2">Submit</button><br><br>
+        <button type="submit" class="myBtn blockBtn">Submit</button><br><br>
+        <button class="myBtn2 blockBtn">Submit</button><br><br>
+        <button class="myBtn3">Submit</button><br><br>
+        <button class="myBtn3 blockBtn">Submit</button>
     </div>
 
-    
 
 
     <!-- Optional JavaScript -->
