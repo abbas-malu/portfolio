@@ -8,7 +8,7 @@
         href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Source+Code+Pro&family=Varela+Round&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>User Form</title>
+    <title>Sign Up</title>
 </head>
 
 <body>
@@ -27,9 +27,13 @@
         <label for="name">Password</label>
         <input type="password" name="pswd" id="pswd" class="inp" placeholder="Enter Password" autocomplete="off"
             spellcheck="false">
-        <button type="button" class="btn">Submit</button>
+            <div id="myDiv"><label id="showHide" onclick="show()"><i class="fas fa-eye"></i> Show Password</label></div>
+        <button type="button" class="btn">Sign Up</button>
+        
 
     </div>
+    <script src="https://kit.fontawesome.com/fa9124eacc.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
