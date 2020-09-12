@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="jquery-3.5.1.min.js"></script>
+    <title>jquery-3</title>
+    <style>
+        /*span{
+            position: absolute;
+        }*/
+        .abs{
+            position: relative;
+        }
+        /*span{
+            display: none;
+            float: left;
+            z-index: 10;
+            top: 5px;
+            left: 20px;
+            padding: 10px 20px;
+        }*/
+        img{
+            position: absolute;
+        }
+        .xx{
+            position: relative;
+        }
+        span{
+            display: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+<!-- 
+    <div class="container mt-5 xx">
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616__340.jpg" class=""  id="imga" width="50%" alt="">
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616__340.jpg" class=""  id="imgb" width="50%" alt="">
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616__340.jpg" class=""  id="imgc" width="50%" alt="">
+    </div>
+    <button class="btn btn-primary" id="tog">next</button>
+
+    <div class="d-flex flex-column container mt-5">
+        <div class="display-1 my-5">JQuery</div>
+        <div class="container abs">
+        <button type="button" class="btn btn-success my-5" id="collapseBtn">CLICK ME</button>
+        <span class="bg-dark text-white">hello</span>
+    </div>
+        <div class="container" id="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde numquam
+            possimus sit dolore saepe, similique soluta nam eligendi? Distinctio illo fugiat adipisci animi maxime,
+            eaque autem iure, optio tenetur corporis mollitia in quia possimus blanditiis eum. Impedit, natus! Soluta
+            perspiciatis a omnis ullam voluptas molestiae natus maiores veniam distinctio doloribus assumenda expedita
+            nam voluptatum animi adipisci, laborum suscipit cum error! Fugiat laborum dignissimos ad quas numquam sit,
+            quisquam itaque consectetur nobis minima aperiam ea doloremque eligendi natus iusto totam accusantium,
+            perspiciatis ipsam cupiditate recusandae maiores id ducimus voluptas laudantium. Cum aliquid quasi commodi,
+            at officiis sit. Natus accusantium et voluptatum.
+        </div>
+        <div class="container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quidem cupiditate sequi voluptatibus, aut aspernatur necessitatibus ducimus. Tempore aspernatur amet perferendis debitis error, vitae ea hic ut. Iste odio dolorem maiores mollitia, tenetur debitis unde iusto, temporibus optio esse exercitationem? Rerum vel harum aliquid blanditiis veniam consectetur eligendi tempora error odit at. Amet, porro! Iusto totam, explicabo voluptate molestias laborum accusantium nam eaque porro illo voluptatum ut autem, consectetur soluta non minus. Non enim, distinctio omnis libero ipsum nulla accusantium aliquid similique nesciunt facere ex consequuntur itaque doloribus consequatur molestiae vitae nostrum suscipit, accusamus laborum atque. Cum explicabo labore quam.
+        </div>
+    </div> -->
+    <!-- <button id="ok">click</button> -->
+    <div class="container my-5">
+        <div id="myname">
+            <span id="s1">a</span>
+            <span id="s2">b</span>
+            <span id="s3">b</span>
+            <span id="s4">a</span>
+            <span id="s5">s</span>
+        </div>
+    </div>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum quae eos. Magnam, non sed. Culpa facilis harum repellendus inventore itaque porro dolorum quam et recusandae numquam delectus doloremque, quos nemo quae praesentium excepturi! Magni nemo voluptatibus fugiat, qui sint ipsum, dolorem minima consequuntur sed fuga hic quam obcaecati eum?</p> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" -->
+    <!-- integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"> -->
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script>
+        $('document').ready(function () {
+            /*$('#collapseBtn').on({
+                click: function(){
+                    $('#collapse').slideToggle(500);
+                },
+                mouseenter: function(){
+                    $('span').fadeIn(100);
+                },
+                mouseleave: function(){
+                    $('span').fadeOut(100);
+                }
+            });
+           $('#imgb').hide()     
+           $('#imgc').hide()   
+            $('#tog').click(function(){
+                $('#imga').animate({left: '250px'},1000).fadeOut()
+                $('#imgb').fadeIn(1500)
+            })*/
+        
+            
+            $(`#s1`).fadeIn().delay(1000).(`#s2`).fadeIn().delay(1000)
+            $
+            $(`#s3`).fadeIn().delay(1000)
+            $(`#s4`).fadeIn().delay(1000)
+            $(`#s5`).fadeIn().delay(1000)
+            
+        }); 
+    </script>
+</body>
+
+</html>
