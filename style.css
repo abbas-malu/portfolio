@@ -11,6 +11,7 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 .nav{
     position: relative;
@@ -54,6 +55,9 @@ button:hover{
     background-color: white;
     color: rgba(0, 0, 0, 1);
 }
+.m50{
+    right: 300px;
+}
 
 .body{
     position: relative;
@@ -82,12 +86,85 @@ button:hover{
 .sidebar{
     position: absolute;
     background-color: rgba(0,0,0,.2);
-    height: 100vh;
+    height: 100%;
     width: 50px;
     top: 0;
     right: 0;
 }
-
+.m200{
+    right: 200px;
+    border-right: 1px white solid ;
+}
+.sidebarMenu{
+    position: absolute;
+    background-color: rgba(0,0,0,.2);
+    height: 100%;
+    padding-left: 20px;
+    width: 200px;
+    top: 0;
+    right: 0px;
+    display: none;
+}
+.sidebarMenu hr{
+    position: absolute;
+    width: 90%;
+    top: 170px;
+}
+.mainMenu{
+    position: relative;
+    display: flex;
+    padding-top: 50px;
+    padding-right: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+.sidebarHead{
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    top: 100px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.sidebarClose{
+    position: absolute;
+    color: white;
+    top: 40px;
+    right: 20px;
+    font-size: xx-large;
+}
+.sidebarBody{
+    color: white;
+    position: absolute;
+    top: 250px;
+    font-size: 18px;
+}
+.sidebarLink{
+    padding: 0px;
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.link{
+    word-wrap: none;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding-top: 30px;
+}
+.call, .mail{
+    position: absolute;
+    height: 10px;
+}
+.call{
+    top:250px
+}
+.mail{
+    top: 330px;
+}
 .menu img{
     position: absolute;
     width: 25px;
@@ -134,14 +211,25 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    bottom: -70px;
+    bottom: 0px;
 }
 .animate  img{
     z-index: -1;
+    opacity: 0;
     width: 50px;
-    animation: bubble 7s linear  infinite  ;
+    animation: bubble 3s linear  infinite  ;
 }
-
+.footer{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,.2);
+    bottom: 0;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
 @keyframes bubble{
     0%{
         transform: translateY(0);
@@ -149,10 +237,10 @@ button:hover{
     }
     50%{
         
-        opacity: 1;
+        opacity: .7;
     }
     70%{
-        opacity: 1;
+        opacity: .7;
     }
     100%{
         opacity: 0;
@@ -161,7 +249,7 @@ button:hover{
 }
 
 .animate img:nth-child(1){
-    animation-delay: 2s;
+    animation-delay: 0s;
     width: 20px;
 }
 .animate img:nth-child(2){
@@ -172,6 +260,7 @@ button:hover{
     width: 35px;
 }
 .animate img:nth-child(4){
+    animation-duration: 5s;
     animation-delay: 1s;
 }
 .animate img:nth-child(5){
@@ -183,8 +272,27 @@ button:hover{
 }
 .animate img:nth-child(7){
     animation-delay: 1.2s;
+    animation-duration: 2s;
     width: 25px;
 }
 .animate img:nth-child(8){
     animation-delay: 4.9s;
+}
+.animate img:nth-child(9){
+    animation-delay: 6.9s;
+    width: 20px;
+
+}
+.animate img:nth-child(10){
+    animation-delay: 1.9s;
+    width: 15px;
+
+}
+.animate img:nth-child(11){
+    animation-delay: 0.9s;
+    width: 30px;
+
+}
+.animate img:nth-child(12){
+    animation-delay: .5s;
 }
