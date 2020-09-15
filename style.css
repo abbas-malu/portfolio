@@ -2,297 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    user-select: none;
-    font-family: 'PT Sans', sans-serif; 
 }
 body{
-    background-image: url('images/background.png');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
+    background-color: #95E3E4;
 }
-.nav{
-    position: relative;
-}
-.head{
+.social-icons{
+    height: 100px;
+    width: 50%;
+    margin: 100px auto;
+    background-color: #95E3E4;
     display: flex;
-    position: absolute;
-    /* font-family: 'Lobster', cursive; */
-    color: white;
-    top: 50px;
-    left: 100px;
-    opacity: 90%;
-    font-size: 30px;
-    font-weight: 700;
-}
-.head img{
-    position: absolute;
-    width: 80px;
-    opacity: 20%;
-    z-index: -1;
-    top: -10px;
-    left: -20px;
-}
-
-.btn{
-    top: 60px;
-    right: 100px;
-}
-button{
-    position: absolute;
-    padding: .500rem 2rem;
-    background-color: rgba(0,0,0, 0);
-    outline: none;
-    border: 2px solid white;
-    border-radius: 20px;
-    font-size: 1rem;
-    color: white;
-    transition: background-color .15s ease-in-out, color .15s ease-in-out;
-}
-button:hover{
-    background-color: white;
-    color: rgba(0, 0, 0, 1);
-}
-.m50{
-    right: 300px;
-}
-
-.body{
-    position: relative;
-}
-.text{
-    position: absolute;
-    color: white;
-    top: 300px;
-    left: 100px;
-    font-family: 'Work Sans', sans-serif;
-}
-.sm{
-    font-size: 20px;
-}
-.big{
-    top: 320px;
-    font-size: 100px;
-    font-weight: 600;
-}
-
-.body button{
-    position: absolute;
-    top: 600px;
-    left: 100px;
-}
-.sidebar{
-    position: absolute;
-    background-color: rgba(0,0,0,.2);
-    height: 100%;
-    width: 50px;
-    top: 0;
-    right: 0;
-}
-.m200{
-    right: 200px;
-    border-right: 1px white solid ;
-}
-.sidebarMenu{
-    position: absolute;
-    background-color: rgba(0,0,0,.2);
-    height: 100%;
-    padding-left: 20px;
-    width: 200px;
-    top: 0;
-    right: 0px;
-    display: none;
-}
-.sidebarMenu hr{
-    position: absolute;
-    width: 90%;
-    top: 170px;
-}
-.mainMenu{
-    position: relative;
-    display: flex;
-    padding-top: 50px;
-    padding-right: 10px;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
-.sidebarHead{
-    position: absolute;
-    color: white;
-    font-weight: 600;
-    top: 100px;
-    letter-spacing: 2px;
-    font-size: 20px;
+.icon{
+    margin: auto;
+    padding: 30px;
+    border:1px solid #73c7c9;
+    box-shadow: 4px 4px 5px 2px rgba(0,0,0,.2),-3px -3px 3px 2px rgba(255, 255, 255, 0.3);
+    transition: box-shadow .15s ease-in-out;
 }
-.sidebarClose{
-    position: absolute;
-    color: white;
-    top: 40px;
-    right: 20px;
+.icon:hover{
+    box-shadow: inset 4px 4px 5px 2px rgba(0,0,0,.2);
+    transform: translateY(2px);
+}
+.fab{
     font-size: xx-large;
+    color: black;
 }
-.sidebarBody{
-    color: white;
-    position: absolute;
-    top: 250px;
-    font-size: 18px;
-}
-.sidebarLink{
-    padding: 0px;
-    position: absolute;
-    color: white;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.link{
-    word-wrap: none;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    padding-top: 30px;
-}
-.call, .mail{
-    position: absolute;
-    height: 10px;
-}
-.call{
-    top:250px
-}
-.mail{
-    top: 330px;
-}
-.menu img{
-    position: absolute;
-    width: 25px;
-    top: 50px;
-    right: 10px;
-}
-.social{
-    position: absolute;
-    top: 300px;
-    right: 0;
-}
-.social img{
-    position: absolute;
-    right: 10px;
-    width: 30px;
-}
-.social1{
-    top: 0px
-}
-.social2{
-    top: 40px
-}.social3{
-    top: 80px
-}
-.useful{
-    position: absolute;
-    top: 800px;
-    right: 0;
-}
-.useful img{
-    position: absolute;
-    right: 10px;
-    width: 30px;
-}
-.useful1{
-    top: 0px
-}
-.useful2{
-    top: 40px
-}
-.animate{
-    width: 100%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    bottom: 0px;
-}
-.animate  img{
-    z-index: -1;
-    opacity: 0;
-    width: 50px;
-    animation: bubble 3s linear  infinite  ;
-}
-.footer{
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    background-color: rgba(0,0,0,.2);
-    bottom: 0;
-    color: white;
-    align-items: center;
-    justify-content: center;
-}
-@keyframes bubble{
-    0%{
-        transform: translateY(0);
-        opacity: 0;
-    }
-    50%{
-        
-        opacity: .7;
-    }
-    70%{
-        opacity: .7;
-    }
-    100%{
-        opacity: 0;
-        transform: translateY(-80vh);
-    }
-}
-
-.animate img:nth-child(1){
-    animation-delay: 0s;
-    width: 20px;
-}
-.animate img:nth-child(2){
-    animation-delay: 1.5s;
-}
-.animate img:nth-child(3){
-    animation-delay: 3s;
-    width: 35px;
-}
-.animate img:nth-child(4){
-    animation-duration: 5s;
-    animation-delay: 1s;
-}
-.animate img:nth-child(5){
-    animation-delay: 1.9s;
-}
-.animate img:nth-child(6){
-    animation-delay: 4.2s;
-    width: 30px;
-}
-.animate img:nth-child(7){
-    animation-delay: 1.2s;
-    animation-duration: 2s;
-    width: 25px;
-}
-.animate img:nth-child(8){
-    animation-delay: 4.9s;
-}
-.animate img:nth-child(9){
-    animation-delay: 6.9s;
-    width: 20px;
-
-}
-.animate img:nth-child(10){
-    animation-delay: 1.9s;
-    width: 15px;
-
-}
-.animate img:nth-child(11){
-    animation-delay: 0.9s;
-    width: 30px;
-
-}
-.animate img:nth-child(12){
-    animation-delay: .5s;
+.fa-facebook{
+    color: blue;
 }
