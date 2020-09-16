@@ -63,7 +63,8 @@ body{
     color: #FF0000;
 }
 h1 {
-    text-align: center;   
+    text-align: center; 
+    text-shadow: 3px 3px 10px #15ff00;  
     margin-top: 20px;
     font-size: 4rem;
     font-family: 'Crete Round', serif;
@@ -185,4 +186,8 @@ h1 {
     background-color: transparent;
     font-size: 10px;
     color: #656a6e;
+}
+.card-grp{
+    display: flex;
+    justify-content: space-around;
 }
