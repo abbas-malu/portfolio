@@ -1,215 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Icons</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- <script src="https://kit.fontawesome.com/fa9124eacc.js" crossorigin="anonymous"></script> -->
-    <script src="font-awesome/fa9124eacc.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=PT+Sans&family=Source+Code+Pro&display=swap"
-        rel="stylesheet">
-    <script src="jquery/jquery-3.5.1.min.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Toss the coin</title>
+    <style>
+        *{
+            user-select: none;
+        }
+        #coin {
+            margin-top: 100px;
+            position: relative;
+        }
+
+        #coins img,
+        p {
+            position: absolute;
+        }
+
+        .anime {
+            animation: toss .3s linear 5;
+        }
+
+        .heads {
+            z-index: 1;
+        }
+
+        img {
+            z-index: 2;
+        }
+
+        .heads {
+            z-index: 3;
+        }
+        .shad{
+            box-shadow: 3px 3px 5px 1px rgb(0, 0, 0,0.4);
+        }
+        @keyframes toss {
+            0% {
+                transform: rotateY(180deg);
+            }
+
+            20% {
+                transform: rotateY(90deg);
+            }
+
+            100% {
+                transform: rotateY(180deg);
+            }
+
+            70% {
+                transform: rotateY(270deg);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Visit Us On Social Media</h1>
-    <div class="social-icons">
-        <div class="icon"><a href="https://www.facebook.com/abbas.malu.39" target="_blank" rel="noopener noreferrer"><i
-                    class="fab fa-facebook"></i></a></div>
-        <div class="icon"><a href="https://www.instagram.com/abbas_malu/" target="_blank" rel="noopener noreferrer"><i
-                    class="fab fa-instagram"></i></a></div>
-        <div class="icon"><a
-                href="https://wa.me/916232705352?text=Hi%2C%20will%20you%20make%20a%20website%20for%20me%3F"
-                target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a></div>
-        <div class="icon"><a href="https://https://twitter.com/AbbasMalu" target="_blank" rel="noopener noreferrer"><i
-                    class="fab fa-twitter"></a></i></div>
-        <div class="icon"><a href="https://www.youtube.com/channel/UCrNMNl3IygWSZsA3gNOg06w" target="_blank"
-                rel="noopener noreferrer"><i class="fab fa-youtube"></i></a></div>
+    <!-- <p class="text-center display-4 my-5">Toss The Coin!!!</p> -->
+    <div class="container shad">
+        <div id="coin" class="d-flex flex-column justify-content-center align-items-center container">
+            <p class="display-4 heads text-warning" style="font-weight: 900;">XXXX</p>
+            <img src="coin.png" alt="" class="mt-5">
+        </div>
+        <div id="result" class=" text-center display-4 text-primary">RESULT</div>
     </div>
-    <div class="card-grp">
-    <div class="card">
-        <div class="thumbnail">
-            <img src="thumb.jpg" alt="">
-        </div>
-        <div class="card-title">
-            The Shape Of You
-        </div>
-        <div class="card-subtitle">
-            Ed Sheeran (ft. salman)
-        </div>
-        <div class="time start">
-            2:01
-        </div>
-        <div class="progress">
-            <div class="bar"></div>
-        </div>
-        <div class="time end">
-            5:00
-        </div>
-        <div class="btn-grp">
-            <div class="prev">
-                <i class="fas fa-backward"></i>
-            </div>
-            <div class="play">
-                <i class="fas fa-pause"></i>
-            </div>
-            <div class="next">
-                <i class="fas fa-forward"></i>
-            </div>
-        </div>
-        <div class="opt">
-            <div class="fav">
-                <i class="fas fa-heart"></i>
-            </div>
-            <div class="replay">
-                <i class="fas fa-redo-alt"></i>
-            </div>
-            <div class="queue">
-                <i class="fas fa-layer-group"></i>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="thumbnail">
-            <img src="thumb.jpg" alt="">
-        </div>
-        <div class="card-title">
-            The Shape Of You
-        </div>
-        <div class="card-subtitle">
-            Ed Sheeran (ft. salman)
-        </div>
-        <div class="time start">
-            2:01
-        </div>
-        <div class="progress">
-            <div class="bar"></div>
-        </div>
-        <div class="time end">
-            5:00
-        </div>
-        <div class="btn-grp">
-            <div class="prev">
-                <i class="fas fa-backward"></i>
-            </div>
-            <div class="play">
-                <i class="fas fa-pause"></i>
-            </div>
-            <div class="next">
-                <i class="fas fa-forward"></i>
-            </div>
-        </div>
-        <div class="opt">
-            <div class="fav">
-                <i class="fas fa-heart"></i>
-            </div>
-            <div class="replay">
-                <i class="fas fa-redo-alt"></i>
-            </div>
-            <div class="queue">
-                <i class="fas fa-layer-group"></i>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="thumbnail">
-            <img src="thumb.jpg" alt="">
-        </div>
-        <div class="card-title">
-            The Shape Of You
-        </div>
-        <div class="card-subtitle">
-            Ed Sheeran (ft. salman)
-        </div>
-        <div class="time start">
-            2:01
-        </div>
-        <div class="progress">
-            <div class="bar"></div>
-        </div>
-        <div class="time end">
-            5:00
-        </div>
-        <div class="btn-grp">
-            <div class="prev">
-                <i class="fas fa-backward"></i>
-            </div>
-            <div class="play">
-                <i class="fas fa-pause"></i>
-            </div>
-            <div class="next">
-                <i class="fas fa-forward"></i>
-            </div>
-        </div>
-        <div class="opt">
-            <div class="fav">
-                <i class="fas fa-heart"></i>
-            </div>
-            <div class="replay">
-                <i class="fas fa-redo-alt"></i>
-            </div>
-            <div class="queue">
-                <i class="fas fa-layer-group"></i>
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="thumbnail">
-            <img src="thumb.jpg" alt="">
-        </div>
-        <div class="card-title">
-            The Shape Of You
-        </div>
-        <div class="card-subtitle">
-            Ed Sheeran (ft. salman)
-        </div>
-        <div class="time start">
-            2:01
-        </div>
-        <div class="progress">
-            <div class="bar"></div>
-        </div>
-        <div class="time end">
-            5:00
-        </div>
-        <div class="btn-grp">
-            <div class="prev">
-                <i class="fas fa-backward"></i>
-            </div>
-            <div class="play">
-                <i class="fas fa-pause"></i>
-            </div>
-            <div class="next">
-                <i class="fas fa-forward"></i>
-            </div>
-        </div>
-        <div class="opt">
-            <div class="fav">
-                <i class="fas fa-heart"></i>
-            </div>
-            <div class="replay">
-                <i class="fas fa-redo-alt"></i>
-            </div>
-            <div class="queue">
-                <i class="fas fa-layer-group"></i>
-            </div>
-        </div>
-    </div>
-</div>
-<button bgcolor="blue">
-Submit
-</button>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
     <script>
-        $('document').ready(function(){
-            $('.fa-pause').click(function(){
-                $(this).removeClass('fa-pause').addClass('fa-play')
-            })
-            $('.fa-forward').click(function(){
-                $('.fa-play').removeClass('fa-play').addClass('fa-pause')
-            })
+        $('#coin').click(function () {
+            $(this).addClass('anime')
+            ch = getRndInteger(1,3)
+            if (ch==1){
+                res = 'Tails'
+            }else{
+                res = 'Heads'
+            }
+            setTimeout(prnt, 1500)
+            function prnt(){
+                $('.heads').html(res)
+                $('#result').html(res)
+                $('#coin').removeClass('anime')
+            }
         })
+        
+        getRndInteger(1,2)
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
     </script>
 </body>
 
